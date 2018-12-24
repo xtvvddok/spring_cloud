@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//WebContent/WEB-INF/views/news_list.js.jsp=UTF-8
+encoding//resources/methodval.properties=UTF-8
+encoding//resources/sysconfig.properties=UTF-8
+encoding//src/CreateCmsCode.java=UTF-8
+encoding//src/com/sofmit/fits/common/utils/DateUtil.java=UTF-8
+encoding//src/com/sofmit/fits/common/utils/ObjectQuery.java=UTF-8
+encoding//src/com/sofmit/fits/common/utils/SystemUtils.java=UTF-8
+encoding//src/com/sofmit/fits/common/utils/file/PropertyUtil.java=UTF-8
+encoding//template/cms/Interface/Action.java=UTF-8
+encoding//template/cms/Interface/Dao.java=UTF-8
+encoding//template/cms/Interface/DaoImpl.java=UTF-8
+encoding//template/cms/Interface/Service.java=UTF-8
+encoding//template/cms/Interface/ServiceImpl.java=UTF-8

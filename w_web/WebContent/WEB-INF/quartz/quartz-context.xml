@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>           
+     <!--任务调度-->
+        <!-- 设置调度 -->
+		<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		 <property name="triggers">
+			    <list>
+			    <ref bean="cronTrigger" />
+			   </list>
+		 </property>
+		</bean>
+		<!-- 配置触发器 -->
+           <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+			  <property name="jobDetail" ref="diao" />
+			   <property name="cronExpression" value="0 */58 * * * ?" />
+		 </bean>
+          <!-- 调度业务 -->
+       <bean id="diao" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">			 			 
+			 <property name="targetObject">  
+	                 <ref bean="expenseJob" />  
+	       </property>
+	       <property name="targetMethod">
+	            <value>getOrder</value>
+	        </property>    
+      </bean>
+        <!-- 定时装置所要执行的任务所在的类 -->
+ <!--    <bean id="expenseJob" class="com.sofmit.lszsk.admin.Action.DdsWebNoticeAction"/>	 -->
+</beans>
