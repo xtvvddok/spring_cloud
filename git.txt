@@ -1,0 +1,7 @@
+git init
+git clone XXX.git
+git config user.name "user"
+git config user.email "email"
+git add .
+git commit -m "log"
+git push -u origin master
